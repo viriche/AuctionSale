@@ -1,13 +1,15 @@
-First launch the server by running the Auction.java file in src/server/
-Now you can start as many clients as you want by running the UserTerminal.java file in src/client/
-The commands to type as a client are in the files in Commands/
-    CommandLogin  : the commands available when first running a client
-    CommandBuyer  : the commands available when logged in as a buyer
-    CommandSeller : the commands available when logged in as a seller
-    CommandAdmin  : the commands available when logged in as the auctioneer
-There can be as many buyers and sellers connected at the same time but only one auctioneer.
-Sellers keep adding sales as they wish and with a time limit.
-Buyers keep bidding on the sales till the time runs out.
-When the time runs out for a sale, the buyer whose bid is the highest buys it.
-The auction house represented by the auctioneer takes a percentage of any purchase and selling that occurs.
+To use this application:
+    First launch the server by running the Auction.java file in src/server/
+    Now you can start as many clients as you want by running the UserTerminal.java file in src/client/
+    The commands to type as a client are in the files in Commands/
+        CommandLogin  : the commands available when first running a client
+        CommandBuyer  : the commands available when logged in as a buyer
+        CommandSeller : the commands available when logged in as a seller
+        CommandAdmin  : the commands available when logged in as the auctioneer
+        
+    There can be as many buyers and sellers connected at the same time but only one auctioneer.
+    Sellers keep adding sales as they wish and with a time limit.
+    Buyers keep bidding on the sales till the time runs out.
+    When the time runs out for a sale, the buyer whose bid is the highest buys it.
+    The auction house represented by the auctioneer takes a percentage of any purchase and selling that occurs.
 

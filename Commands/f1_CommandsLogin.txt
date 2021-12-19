@@ -1,0 +1,6 @@
+HELP -->Show all available commands for Login
+HELPc command -->Show use and useCase of command
+CLEAR -->Clear the terminal
+BUYER>name balance -->Connect as a buyer called name(first character has to be a letter) and owning balance(has to be a floating positive number)
+SELLER>name -->Connect as a seller called name(first character has to be a letter)
+AUCTIONEER>pinCode -->Connect as the auctioneer with the pinCode(a 4 digits natural number)

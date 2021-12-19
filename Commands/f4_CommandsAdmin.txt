@@ -2,12 +2,16 @@ HELP -->Show all available commands for Login
 HELPc command -->Show use and useCase of command
 CLEAR -->Clear the terminal
 AUCTION -->Show auction information
+
 RATIOb pinCode##ratioB -->Set the ratio tax for purchases to ratioB(floating number between 0 and 1 (both exclusive))
 RATIOs pinCode##ratioS -->Set the ratio tax for sellings to ratioS(floating number between 0 and 1 (both exclusive))
 PIN old##new -->Set the pin code from old to new (4 digits natural number)
+
 BID idBid -->Show bid with id idBid
+
 BIDSs idSale -->Show all bids on sale with id idSale
 BIDSs idSale##nbr##[P or T]##[R or N] -->Show all bids on sale with id idSale sorted by price(P) or time(T) in reverse(R) or natural(N) order
+
 BIDS** -->Show all bids
 BIDS** nbr##[P or T]##[R or N] -->Show all bids sorted by price(P) or time(T) in reverse(R) or natural(N) order
 BIDS*r -->Show all bids on running sales
@@ -28,7 +32,9 @@ BIDSmw idMember -->Show all the bids that won their sales relative to member wit
 BIDSmw idMember##nbr##[P or T]##[R or N] -->Show nbr of the bids that won their sales relative to member with id idMember sorted by price(P) or time(T) in reverse(R) or natural(N) order
 BIDSml idMember -->Show all the bids that lost their sales relative to member with id idMember
 BIDSml idMember##nbr##[P or T]##[R or N] -->Show nbr of the bids that lost their sales relative to member with id idMember sorted by price(P) or time(T) in reverse(R) or natural(N) order
+
 SAL idSale -->Show sale with id idSale
+
 SALS** -->Show all sales
 SALS** nbr##[P, BB, D, T or RT]##[R or N] -->Show all sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
 SALS*r -->Show all running sales
@@ -51,12 +57,16 @@ SALSmw idSeller -->Show all purchased sales of seller with id idSeller
 SALSmw idSeller##nbr##[P, BB, D, T or RT]##[R or N] -->Show all purchased sales of seller with id idSeller sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
 SALSml idSeller -->Show all not purchased sales of seller with id idSeller
 SALSml idSeller##nbr##[P, BB, D, T or RT]##[R or N] -->Show all not purchased sales of seller with id idSeller sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+
 TRAD idSale  -->Show trade with id idTrade
+
 TRADS* -->Show all trades
 TRADS* nbr##[P or T]##[R or N] -->Show all trades sorted by final price(P) or time(T) in reverse(R) or natural(N) order
 TRADSm idMember -->Show all trades relative to member with id idMember
 TRADSm idMember##nbr##[P or T]##[R or N] -->Show all trades relative to member with id idMember sorted by final price(P) or time(T) in reverse(R) or natural(N) order
+
 MEM idMember -->Show member with id idMember
+
 MEMS** -->Show all members
 MEMS** nbr##[B, N, PB, or T]##[R or N] -->Show all members sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order
 MEMSb* -->Show all buyers

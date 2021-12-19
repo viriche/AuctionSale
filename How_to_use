@@ -1,7 +1,7 @@
-First launch the server by running the Auction.java file in 
+First launch the server by running the Auction.java file in src/server/
 Now you can start as many clients as you want by running the UserTerminal.java file in src/client/
-The commands to type as a client are in the files in Commands/:
-    CommandLogin : the commands available when first running a client
-    CommandLogin : the commands available when logged in as a buyer
-    CommandLogin : the commands available when logged in as a seller
-    CommandLogin : the commands available when logged in as the auctioneer
+The commands to type as a client are in the files in Commands/
+    CommandLogin  : the commands available when first running a client
+    CommandBuyer  : the commands available when logged in as a buyer
+    CommandSeller : the commands available when logged in as a seller
+    CommandAdmin  : the commands available when logged in as the auctioneer

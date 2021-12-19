@@ -1,0 +1,78 @@
+HELP
+HELP
+Show all available commands for a Buyer
+HELPc
+HELPc command
+Show use and useCase of command
+CLEAR
+CLEAR
+Clear the terminal
+SELF
+SELF
+Show self information
+ADDb
+ADDb idSale##price
+Put bid of amount price on sale with id idSale
+BID
+BID idBid
+Show bid with id idBid
+BIDSs
+BIDSs idSale
+Show all bids on sale with id idSale (if you are rich enough to bid on it)
+BIDSs p
+BIDSs idSale##nbr##[P or T]##[R or N]
+Show nbr of the bids on sale with id idSale sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDS*
+BIDS*
+Show all your bids
+BIDS* p
+BIDS* nbr##[P or T]##[R or N]
+Show nbr of your bids sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSr
+BIDSr
+Show all your bids on running sales
+BIDSr p
+BIDSr nbr##[P or T]##[R or N]
+Show nbr of your bids on running sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSc
+BIDSc
+Show all your bids on closed sales
+BIDSc p
+BIDSc nbr##[P or T]##[R or N]
+Show nbr of your bids on closed sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSw
+BIDSw
+Show all your bids that won their sale
+BIDSw p
+BIDSw nbr##[P or T]##[R or N]
+Show nbr of your bids that won their sale sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSl
+BIDSl
+Show all your bids that lost their sale
+BIDSl p
+BIDSl nbr##[P or T]##[R or N]
+Show nbr of your bids that lost their sale sorted by price(P) or time(T) in reverse(R) or natural(N) order
+SAL
+SAL idSale
+Show sale with id idSale
+SALSr
+SALSr
+Show all sales
+SALSr p
+SALSr nbr##[P, BB, D, T or RT]##[R or N]
+Show all running sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSa
+SALSa
+Show all sales you can bid on
+SALSa p
+SALSa nbr##[P, BB, D, T or RT]##[R or N]
+Show all sales you can bid on sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+TRAD
+TRAD idTrade
+Show trade with id idTrade
+TRADS
+TRADS
+Show all your trades
+TRADS p
+TRADS nbr##[P or T]##[R or N]
+Show nbr of your trades sorted by price(P) or time(T) in reverse(R) or natural(N) order

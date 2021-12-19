@@ -1,0 +1,231 @@
+HELP
+HELP
+Show all available commands for Login
+HELPc
+HELPc command
+Show use and useCase of command
+CLEAR
+CLEAR
+Clear the terminal
+AUCTION
+AUCTION
+Show auction information
+RATIOb
+RATIOb pinCode##ratioB
+Set the ratio tax for purchases to ratioB(floating number between 0 and 1 (both exclusive))
+RATIOs
+RATIOs pinCode##ratioS
+Set the ratio tax for sellings to ratioS(floating number between 0 and 1 (both exclusive))
+PIN
+PIN old##new
+Set the pin code from old to new (4 digits natural number)
+BID
+BID idBid
+Show bid with id idBid
+BIDSs
+BIDSs idSale
+Show all bids on sale with id idSale
+BIDSs p
+BIDSs idSale##nbr##[P or T]##[R or N]
+Show all bids on sale with id idSale sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDS**
+BIDS**
+Show all bids
+BIDS** p
+BIDS** nbr##[P or T]##[R or N]
+Show all bids sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDS*r
+BIDS*r
+Show all bids on running sales
+BIDS*r p
+BIDS*r nbr##[P or T]##[R or N]
+Show all bids on running sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDS*c
+BIDS*c
+Show all bids on closed sales
+BIDS*c p
+BIDS*c nbr##[P or T]##[R or N]
+Show all bids on closed sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDS*w
+BIDS*w
+Show all the bids that won their sale
+BIDS*w p
+BIDS*w nbr##[P or T]##[R or N]
+Show nbr of the bids that won their sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDS*l
+BIDS*l
+Show all the bids that lost their sale
+BIDS*l p
+BIDS*l nbr##[P or T]##[R or N]
+Show nbr of the bids that lost their sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSm*
+BIDSm* idMember
+Show all bids relative to member with id idMember
+BIDSm* p
+BIDSm* idMember##nbr##[P or T]##[R or N]
+Show all bids relative to member with id idMember sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSmr
+BIDSmr idMember
+Show all bids on running sales relative to member with id idMember
+BIDSmr p
+BIDSmr idMember##nbr##[P or T]##[R or N]
+Show all bids on running relative to member with id idMember sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSmc
+BIDSmc idMember
+Show all bids on closed sales relative to member with id idMember
+BIDSmc p
+BIDSmc idMember##nbr##[P or T]##[R or N]
+Show all bids on closed relative to member with id idMember sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSmw
+BIDSmw idMember
+Show all the bids that won their sales relative to member with id idMember
+BIDSmw p
+BIDSmw idMember##nbr##[P or T]##[R or N]
+Show nbr of the bids that won their sales relative to member with id idMember sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSml
+BIDSml idMember
+Show all the bids that lost their sales relative to member with id idMember
+BIDSml p
+BIDSml idMember##nbr##[P or T]##[R or N]
+Show nbr of the bids that lost their sales relative to member with id idMember sorted by price(P) or time(T) in reverse(R) or natural(N) order
+SAL
+SAL idSale
+Show sale with id idSale
+SALS**
+SALS**
+Show all sales
+SALS** p
+SALS** nbr##[P, BB, D, T or RT]##[R or N]
+Show all sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALS*r
+SALS*r
+Show all running sales
+SALS*r p
+SALS*r nbr##[P, BB, D, T or RT]##[R or N]
+Show all running sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALS*c
+SALS*c
+Show all closed sales
+SALS*c p
+SALS*c nbr##[P, BB, D, T or RT]##[R or N]
+Show all closed sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALS*w
+SALS*w
+Show all purchased sales
+SALS*w p
+SALS*w nbr##[P, BB, D, T or RT]##[R or N]
+Show all purchased sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALS*l
+SALS*l
+Show all not purchased sales
+SALS*l p
+SALS*l nbr##[P, BB, D, T or RT]##[R or N]
+Show all not purchased sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSma
+SALSma idBuyer
+Show all sales buyer with id idBuyer can bid on
+SALSma p
+SALSma idBuyer##nbr##[P, BB, D, T or RT]##[R or N]
+Show all sales buyer with id idBuyer can bid on sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSm*
+SALSm* idSeller
+Show all sales of seller with id idSeller
+SALSm* p
+SALSm* idSeller##nbr##[P, BB, D, T or RT]##[R or N]
+Show all sales of seller with id idSeller sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSmr
+SALSmr idSeller
+Show all running sales of seller with id idSeller
+SALSmr p
+SALSmr idSeller##nbr##[P, BB, D, T or RT]##[R or N]
+Show all running sales of seller with id idSeller sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSmc
+SALSmc idSeller
+Show all closed sales of seller with id idSeller
+SALSmc p
+SALSmc idSeller##nbr##[P, BB, D, T or RT]##[R or N]
+Show all closed sales of seller with id idSeller sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSmw
+SALSmw idSeller
+Show all purchased sales of seller with id idSeller
+SALSmw p
+SALSmw idSeller##nbr##[P, BB, D, T or RT]##[R or N]
+Show all purchased sales of seller with id idSeller sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSml
+SALSml idSeller
+Show all not purchased sales of seller with id idSeller
+SALSml p
+SALSml idSeller##nbr##[P, BB, D, T or RT]##[R or N]
+Show all not purchased sales of seller with id idSeller sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+TRAD
+TRAD idSale 
+Show trade with id idTrade
+TRADS*
+TRADS*
+Show all trades
+TRADS* p
+TRADS* nbr##[P or T]##[R or N]
+Show all trades sorted by final price(P) or time(T) in reverse(R) or natural(N) order
+TRADSm
+TRADSm idMember
+Show all trades relative to member with id idMember
+TRADSm p
+TRADSm idMember##nbr##[P or T]##[R or N]
+Show all trades relative to member with id idMember sorted by final price(P) or time(T) in reverse(R) or natural(N) order
+MEM
+MEM idMember
+Show member with id idMember
+MEMS**
+MEMS**
+Show all members
+MEMS** p
+MEMS** nbr##[B, N, PB, or T]##[R or N]
+Show all members sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order
+MEMSb*
+MEMSb*
+Show all buyers
+MEMSb* p
+MEMSb* nbr##[B, N, PB, or T]##[R or N]
+Show all buyers sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order
+MEMSs*
+MEMSs*
+Show all sellers
+MEMSs* p
+MEMSs* nbr##[B, N, PB, or T]##[R or N]
+Show all sellers sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order
+MEMS*i
+MEMS*i
+Show all members logged in
+MEMS*i p
+MEMS*i nbr##[B, N, PB, or T]##[R or N]
+Show all members logged in sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order
+MEMS*o
+MEMS*o
+Show all members logged out
+MEMS*o p
+MEMS*o nbr##[B, N, PB, or T]##[R or N]
+Show all members logged out sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order
+MEMSbi
+MEMSbi
+Show all buyers logged in
+MEMSbi p
+MEMSbi nbr##[B, N, PB, or T]##[R or N]
+Show all buyers logged in sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order
+MEMSbo
+MEMSbo
+Show all buyers logged out
+MEMSbo p
+MEMSbo nbr##[B, N, PB, or T]##[R or N]
+Show all buyers logged out sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order
+MEMSsi
+MEMSsi
+Show all sellers logged in
+MEMSsi p
+MEMSsi nbr##[B, N, PB, or T]##[R or N]
+Show all sellers logged in sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order
+MEMSso
+MEMSso
+Show all sellers logged out
+MEMSso p
+MEMSso nbr##[B, N, PB, or T]##[R or N]
+Show all sellers logged out sorted by name(N), balance(B), useful balance(PB) or time logged out(T) in reverse(R) or natural(N) order

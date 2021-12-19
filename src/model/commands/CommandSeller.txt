@@ -1,0 +1,96 @@
+HELP
+HELP
+Show all available commands for a Buyer
+HELPc
+HELPc command
+Show use and useCase of command
+CLEAR
+CLEAR
+Clear the terminal
+SELF
+SELF
+Show self information
+ADDs
+ADDs desc##price##time
+Start sale of desc with askedPrice price for duration time(number of minutes)
+BID
+BID idBid
+Show bid with id idBid
+BIDSs
+BIDSs idSale
+Show all bids on sale with id idSale (if yours)
+BIDSs p
+BIDSs idSale##nbr##[P or T]##[R or N]
+Show all bids on sale with id idSale sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDS*
+BIDS*
+Show all bids on your sales
+BIDS* p
+BIDS* nbr##[P or T]##[R or N]
+Show all bids on your sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSr
+BIDSr
+Show all bids on your running sales
+BIDSr p
+BIDSr nbr##[P or T]##[R or N]
+Show all bids on your running sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSc
+BIDSc
+Show all bids on your closed sales
+BIDSc p
+BIDSc nbr##[P or T]##[R or N]
+Show all bids on your closed sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSw
+BIDSw
+Show all the bids that won your sales
+BIDSw p
+BIDSw nbr##[P or T]##[R or N]
+Show nbr of the bids that won your sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+BIDSl
+BIDSl
+Show all the bids that lost your sales
+BIDSl p
+BIDSl nbr##[P or T]##[R or N]
+Show nbr of the bids that lost your sales sorted by price(P) or time(T) in reverse(R) or natural(N) order
+SAL
+SAL idSale
+Show sale with id idSale
+SALS*
+SALS*
+Show all your sales
+SALS* p
+SALS* nbr##[P, BB, D, T or RT]##[R or N]
+Show all your sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSr
+SALSr
+Show all your running sales
+SALSr p
+SALSr nbr##[P, BB, D, T or RT]##[R or N]
+Show all your running sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSc
+SALSc
+Show all your closed sales
+SALSc p
+SALSc nbr##[P, BB, D, T or RT]##[R or N]
+Show all your closed sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSw
+SALSw
+Show all your purchased sales
+SALSw p
+SALSw nbr##[P, BB, D, T or RT]##[R or N]
+Show all your purchased sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+SALSl
+SALSl
+Show all your not purchased sales
+SALSl p
+SALSl nbr##[P, BB, D, T or RT]##[R or N]
+Show all your not purchased sales sorted by asked price(P), best bid (BB), duration(D) time closed(T) or time remaining(RT) in reverse(R) or natural(N) order
+TRAD
+TRAD idTrade
+Show trade with id idTrade
+TRADS
+TRADS
+Show all your trades
+TRADS p
+TRADS nbr##[P or T]##[R or N]
+Show nbr of your trades sorted by price(P) or time(T) in reverse(R) or natural(N) order

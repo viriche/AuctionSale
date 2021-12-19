@@ -1,0 +1,3 @@
+First launch the server by running the Auction.java file in 
+Now you can start as many clients as you want by running the UserTerminal.java file in 
+The commands to type as a client are in the directory:

@@ -7,6 +7,7 @@ To use this application:
         CommandSeller : the commands available when logged in as a seller
         CommandAdmin  : the commands available when logged in as the auctioneer
         
+    Pin code for the Auctioneer is 0000.
     There can be as many buyers and sellers connected at the same time but only one auctioneer.
     Sellers keep adding sales as they wish and with a time limit.
     Buyers keep bidding on the sales till the time runs out.

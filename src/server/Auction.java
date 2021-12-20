@@ -22,7 +22,12 @@ public final class Auction {
                     LoginProcess l = new LoginProcess(s);
                     l.start();
                 }
-            }catch (Exception ignored){}
+            }catch (BindException e){
+                System.out.println("Server already running");
+            }catch (Exception e) {
+                System.out.println(e.getMessage());
+                //e.printStackTrace();
+            }
         } catch (Exception e) {
             System.out.println("Initialisation Failed");
             System.out.println(e.getMessage());

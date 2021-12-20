@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public abstract class Syntax {
+    public static final String PATH =System.getProperty("java.class.path")+"\\";
     public static List<String> keySetL = new ArrayList<>();
     public static List<String> keySetB = new ArrayList<>();
     public static List<String> keySetS = new ArrayList<>();
@@ -26,7 +27,7 @@ public abstract class Syntax {
     }
 
     public static void fillL() throws Exception {
-        File myObj = new File("src\\model\\commands\\commandLogin.txt");
+        File myObj = new File(PATH +"model\\commands\\commandLogin.txt");
         Scanner myReader = new Scanner(myObj);
         String data, key;
         while (myReader.hasNextLine()) {
@@ -41,7 +42,7 @@ public abstract class Syntax {
         myReader.close();
     }
     public static void fillB() throws Exception {
-        File myObj = new File("src\\model\\commands\\commandBuyer.txt");
+        File myObj = new File(PATH +"model\\commands\\commandBuyer.txt");
         Scanner myReader = new Scanner(myObj);
         String data, key;
         while (myReader.hasNextLine()) {
@@ -56,7 +57,7 @@ public abstract class Syntax {
         myReader.close();
     }
     public static void fillS() throws Exception {
-        File myObj = new File("src\\model\\commands\\commandSeller.txt");
+        File myObj = new File(PATH +"model\\commands\\commandSeller.txt");
         Scanner myReader = new Scanner(myObj);
         String data, key;
         while (myReader.hasNextLine()) {
@@ -71,7 +72,7 @@ public abstract class Syntax {
         myReader.close();
     }
     public static void fillA() throws Exception {
-        File myObj = new File("src\\model\\commands\\commandAdmin.txt");
+        File myObj = new File(PATH +"model\\commands\\commandAdmin.txt");
         Scanner myReader = new Scanner(myObj);
         String data, key;
         while (myReader.hasNextLine()) {
@@ -147,16 +148,16 @@ public abstract class Syntax {
 
     public static void fill() throws Exception {
         FileWriter myWriter;
-        myWriter = new FileWriter("Commands\\f1_CommandsLogin.txt");
+        myWriter = new FileWriter(PATH +"..\\..\\..\\Commands\\f1_CommandsLogin.txt");
         myWriter.write(commandsL());
         myWriter.close();
-        myWriter = new FileWriter("Commands\\f2_CommandsBuyer.txt");
+        myWriter = new FileWriter(PATH +"..\\..\\..\\Commands\\f2_CommandsBuyer.txt");
         myWriter.write(commandsB());
         myWriter.close();
-        myWriter = new FileWriter("Commands\\f3_CommandsSeller.txt");
+        myWriter = new FileWriter(PATH +"..\\..\\..\\Commands\\f3_CommandsSeller.txt");
         myWriter.write(commandsS());
         myWriter.close();
-        myWriter = new FileWriter("Commands\\f4_CommandsAdmin.txt");
+        myWriter = new FileWriter(PATH +"..\\..\\..\\Commands\\f4_CommandsAdmin.txt");
         myWriter.write(commandsA());
         myWriter.close();
     }

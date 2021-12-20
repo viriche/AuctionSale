@@ -1,3 +1,5 @@
+#Commands available at login stage
+
 HELP -->Show all available commands for Login
 HELPc command -->Show use and useCase of command
 CLEAR -->Clear the terminal

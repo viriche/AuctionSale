@@ -1,7 +1,6 @@
 package model;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.*;
 
 public abstract class Syntax {
@@ -23,6 +22,7 @@ public abstract class Syntax {
         fillB();
         fillS();
         fillA();
+        //fill();
     }
 
     public static void fillL() throws Exception {
@@ -40,7 +40,7 @@ public abstract class Syntax {
         }
         myReader.close();
     }
-    public static void fillB() throws FileNotFoundException {
+    public static void fillB() throws Exception {
         File myObj = new File("src\\model\\commands\\commandBuyer.txt");
         Scanner myReader = new Scanner(myObj);
         String data, key;
@@ -55,7 +55,7 @@ public abstract class Syntax {
         }
         myReader.close();
     }
-    public static void fillS() throws FileNotFoundException {
+    public static void fillS() throws Exception {
         File myObj = new File("src\\model\\commands\\commandSeller.txt");
         Scanner myReader = new Scanner(myObj);
         String data, key;
@@ -70,7 +70,7 @@ public abstract class Syntax {
         }
         myReader.close();
     }
-    public static void fillA() throws FileNotFoundException {
+    public static void fillA() throws Exception {
         File myObj = new File("src\\model\\commands\\commandAdmin.txt");
         Scanner myReader = new Scanner(myObj);
         String data, key;
@@ -113,6 +113,7 @@ public abstract class Syntax {
 
     public static String commandsL(){
         StringBuilder s= new StringBuilder();
+        s.append("#Commands available at login stage\n");
         for(String k: keySetL){
             s.append(syntaxL.get(k)).append(" -->").append(useCaseL.get(k)).append("\n");
         }
@@ -120,6 +121,7 @@ public abstract class Syntax {
     }
     public static String commandsB(){
         StringBuilder s= new StringBuilder();
+        s.append("#Commands available for a Buyer\n");
         for(String k: keySetB){
             s.append(syntaxB.get(k)).append(" -->").append(useCaseB.get(k)).append("\n");
         }
@@ -127,6 +129,7 @@ public abstract class Syntax {
     }
     public static String commandsS(){
         StringBuilder s= new StringBuilder();
+        s.append("#Commands available for a Seller\n");
         for(String k: keySetS){
             s.append(syntaxS.get(k)).append(" -->").append(useCaseS.get(k)).append("\n");
         }
@@ -134,9 +137,27 @@ public abstract class Syntax {
     }
     public static String commandsA(){
         StringBuilder s= new StringBuilder();
+        s.append("#Commands available for the Auctioneer\n");
         for(String k: keySetA){
             s.append(syntaxA.get(k)).append(" -->").append(useCaseA.get(k)).append("\n");
         }
         return s.toString();
+    }
+
+
+    public static void fill() throws Exception {
+        FileWriter myWriter;
+        myWriter = new FileWriter("Commands\\f1_CommandsLogin.txt");
+        myWriter.write(commandsL());
+        myWriter.close();
+        myWriter = new FileWriter("Commands\\f2_CommandsBuyer.txt");
+        myWriter.write(commandsB());
+        myWriter.close();
+        myWriter = new FileWriter("Commands\\f3_CommandsSeller.txt");
+        myWriter.write(commandsS());
+        myWriter.close();
+        myWriter = new FileWriter("Commands\\f4_CommandsAdmin.txt");
+        myWriter.write(commandsA());
+        myWriter.close();
     }
 }

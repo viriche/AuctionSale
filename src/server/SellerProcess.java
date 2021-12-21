@@ -26,7 +26,7 @@ public final class SellerProcess extends Thread{
             while (true){
                 out_sc.println(member.getWelcomeMsg());
                 String msg = in_sc.readLine();
-                if (msg.equals("HELP")) Auction.sendMsg(out_sc, Syntax.commandsS());
+                if (msg.equals("HELP")) Auction.sendMsg(out_sc, Syntax.getHelpSeller());
                 else if (msg.startsWith("HELPc")){
                     if(msg.length()>6 && msg.charAt(5) == ' ') Auction.sendMsg(out_sc, Syntax.commandS(msg.substring(6)));
                     else Auction.sendMsg(out_sc, Server.alertWrongUseOfSyntax(Syntax.syntaxS.get("HELPc")));

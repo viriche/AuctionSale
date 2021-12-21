@@ -24,7 +24,7 @@ public final class LoginProcess extends Thread{
             while(!logged) {
                 out_sc.println(">");
                 String msg = in_sc.readLine();
-                 if (msg.equals("HELP")) Auction.sendMsg(out_sc, Syntax.commandsL());
+                 if (msg.equals("HELP")) Auction.sendMsg(out_sc, Syntax.getHelpLogin());
                  else if (msg.startsWith("HELPc")){
                      if(msg.length()>6 && msg.charAt(5) == ' ') Auction.sendMsg(out_sc, Syntax.commandL(msg.substring(6)));
                      else Auction.sendMsg(out_sc, Server.alertWrongUseOfSyntax(Syntax.syntaxL.get("HELPc")));

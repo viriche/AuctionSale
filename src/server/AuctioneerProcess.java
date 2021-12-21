@@ -24,7 +24,7 @@ public final class AuctioneerProcess extends Thread{
             while (true){
                 out_sc.println("admin>");
                 String msg = in_sc.readLine();
-                if (msg.equals("HELP")) Auction.sendMsg(out_sc, Syntax.commandsA());
+                if (msg.equals("HELP")) Auction.sendMsg(out_sc, Syntax.getHelpAdmin());
                 else if (msg.startsWith("HELPc")){
                     if(msg.length()>6 && msg.charAt(5) == ' ') Auction.sendMsg(out_sc, Syntax.commandA(msg.substring(6)));
                     else Auction.sendMsg(out_sc, Server.alertWrongUseOfSyntax(Syntax.syntaxA.get("HELPc")));
